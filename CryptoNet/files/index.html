@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CryptoNet</title>
+
+    <!--Icon Site-->
+    <link rel="icon" type="image/x-icon" href="/assets/CryptoNet Icon Site.png">
+
+    <!--Google Font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Importing Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="main.css">
+
+    <!--Lottie Animation-->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav> 
+
+    <div class="logo">
+
+        <img src="/assets/CryptoNet Logo.png">
+        
+    </div>
+
+    <ul class="nav-links">
+        
+        <li class="hover:text-[#e23e57] hover:underline hover:underline-offset-4">Home</li>
+        <li class="hover:text-[#e23e57] hover:underline hover:underline-offset-4">Services</li>
+        <li class="hover:text-[#e23e57] hover:underline hover:underline-offset-4">Contact</li>
+        
+        <span class="dark-mode-icon hover:opacity-[0.5]">
+            <i class="fa-regular fa-moon" style="color: #000000;"></i>
+        </span>
+
+        <span class="light-mode-icon hover:opacity-[0.5]">
+            <i class="fa-regular fa-sun" style="color: #000000;"></i>
+        </span>
+
+    </ul>
+
+    <div class="burger-nav">
+
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        
+    </div>
+
+</nav>
+
+<h1 class="text-center text-5xl font-medium">Welcome to CryptoNet</h1>
+<h2 class="text-center pt-[1rem]">Your Guide to the Crypto Market!</h2>
+
+<div class="crypto-animation flex items-center justify-center gap-x-5">
+<dotlottie-player src="https://lottie.host/11d96cf8-1a1e-46ec-bab3-2143a872ff43/rWeszAlPIS.lottie" background="transparent" speed="1" style="width: 400px; height: 400px" loop autoplay></dotlottie-player>
+
+<div>
+
+    <p class="max-w-md"> Explore the top 10 cryptocurrencies and stay updated with the latest market trends. CryptoNet keeps it simple with real time prices and quick access to the news that matters.</p>
+
+</div>
+
+</div>
+
+<h1 class="text-center text-2xl font-medium pt-[1rem] pb-[1rem]">The World's Leading 10 Cryptocurrencies</h1>
+
+<div class="table-container pt-5 pb-5 flex justify-center px-10">
+
+<table class="w-full text-center border border-gray-300 ">
+
+    <thead class="bg-gray-100">
+
+    <tr>
+        <th class="px-4 py-2 border">Rank</th>
+        <th class="px-4 py-2 border">Logo</th>
+        <th class="px-4 py-2 border">Name</th>
+        <th class="px-4 py-2 border">Current Price</th>
+        <th class="px-4 py-2 border">Last 24hrs</th>
+        <th class="px-4 py-2 border">Market Cap %</th>
+    </tr>
+
+    </thead>
+
+    <tbody id="tbody">
+
+    </tbody>
+    
+</table>
+
+</div>
+
+</div>
+
+<footer>
+
+    <div class="footer-elements text-center pt-20">
+
+    <p class="hover:text-[#616161]"><a href="https://www.coingecko.com/en/api">Powered by CoinGecko</a> API</p>
+
+    <p class="pt-2">Built by Javier Onofre</p>
+
+    <div class="links-icons">
+
+    <a href="https://github.com/onofre55" class="pr-4">
+        <i class="fa-brands fa-github text-3xl pt-4 pb-4 gap-7" style="color: #000000;"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/javier-onofre-931aab2a8/">
+        <i class="fa-brands fa-linkedin text-3xl gap-3" style="color: #000000;"></i>
+    </a>
+
+    </div>
+
+    </div>
+
+</footer>
+
+<script src="/files/cryptonet.js"></script>
+<script src="/files/darkmode.js"></script>
+<script src="/files/nav.js"></script>
+
+</body>
+
+</html>
